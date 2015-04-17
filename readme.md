@@ -10,7 +10,13 @@ Setup for Auth0 is extremely fast and easy. Just [sign up for a free account at 
 
 Deploy this app to Heroku for free and have it up and running in a matter of minutes.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/jeffdonthemic/node-nforce-demo)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/jeffdonthemic/auth0-node-starter)
+
+After the app is created you'll need to update Auth0 and add the newly created Heroku URL to the list of "Allowed Callback URLs"
+for the "Default App". 
+
+Now go to the "Settings" tab for your app in Heroku and update the AUTH0_CALLBACK_URL Config Variables with the correct URL for your Heroku app. 
+
 
 ## Local Installation Instructions
 
@@ -32,7 +38,7 @@ export AUTH0_DOMAIN=YOUR-AUTH0-NAMESPACE
 export AUTH0_CLIENT_ID=YOUR-AUTH0-CLIENT-ID
 export AUTH0_CLIENT_SECRET=YOUR-AUTH0-CLIENT-SECRET
 export AUTH0_CALLBACK_URL=http://localhost:8000/callback
-export AUTH0_SCOPE='openid profile'
+export AUTH0_SCOPE='openid'
 ```
 
 3. Start the server with `node app.js`

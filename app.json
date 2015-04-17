@@ -1,0 +1,28 @@
+{
+  "name": "Auth0 NodeJS Starter",
+  "description": "A barebones starter application for Auth0. Provides login functionality, security and viewing user info.",
+  "repository": "https://github.com/jeffdonthemic/auth0-node-starter",
+  "website": "http://blog.jeffdouglas.com",
+  "logo": "https://avatars1.githubusercontent.com/u/2824157?v=3&s=200",
+  "keywords": ["node", "auth0"],
+  "env": {
+    "AUTH0_DOMAIN": {
+      "description": "Your Auth0 Domain",
+      "value": "YOUR_NAMESPACE.auth0.com"
+    },
+    "AUTH0_CLIENT_ID": {
+      "description": "Your Auth0 Client Id."
+    },
+    "AUTH0_CLIENT_SECRET": {
+      "description": "Your Auth0 Client Id."
+    },
+    "AUTH0_CALLBACK_URL": {
+      "description": "The allowable callback URL configured in Auth0. Update after the app is created.",
+      "value": "http://YOUR-APP.herokuapp.com/callback"
+    },
+    "AUTH0_SCOPE": {
+      "description": "Your Connected App's Consumer Secret.",
+      "value": "openid"
+    }
+  }
+}
