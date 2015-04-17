@@ -5,7 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var bodyParser = require('body-parser');
-var dotenv = require('dotenv');
 var passport = require('passport');
 var Auth0Strategy = require('passport-auth0');
 
@@ -13,8 +12,6 @@ var routes = require('./routes/index');
 
 var app = express();
 app.set('port', process.env.PORT || 8000);
-
-dotenv.load();
 
 var strategy = new Auth0Strategy({
     domain:       process.env['AUTH0_DOMAIN'],
