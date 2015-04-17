@@ -2,6 +2,10 @@
 
 A barebones starter application for Auth0.
 
+## Auth0 Settings
+
+Scope -- https://auth0.com/docs/protocols
+
 ## Deploy to Heroku
 
 Deploy this app to Heroku for free and have it up and running in a matter of minutes.

@@ -11,7 +11,8 @@ router.get('/login', function(req, res) {
   res.render('login', {
     domain: process.env['AUTH0_DOMAIN'],
     clientId: process.env['AUTH0_CLIENT_ID'],
-    callbackUrl: process.env['AUTH0_CALLBACK_URL'] || 'http://localhost:8000/callback'
+    callbackUrl: process.env['AUTH0_CALLBACK_URL'] || 'http://localhost:8000/callback',
+    scope: process.env['AUTH0_SCOPE'] || 'openid'
   });
 });
 
