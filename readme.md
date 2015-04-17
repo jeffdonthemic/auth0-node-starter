@@ -12,7 +12,7 @@ Deploy this app to Heroku for free and have it up and running in a matter of min
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/jeffdonthemic/auth0-node-starter)
 
-After the app is created you'll need to update Auth0 and add the newly created Heroku URL to the list of "Allowed Callback URLs"
+After the app is created you'll need to [update the default Auth0 application](https://manage.auth0.com/#/applications) and add the newly created Heroku URL to the list of "Allowed Callback URLs"
 for the "Default App". 
 
 Now go to the "Settings" tab for your app in Heroku and update the AUTH0_CALLBACK_URL Config Variables with the correct URL for your Heroku app. 

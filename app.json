@@ -18,7 +18,7 @@
     },
     "AUTH0_CALLBACK_URL": {
       "description": "The allowable callback URL configured in Auth0. Update after the app is created.",
-      "value": "http://YOUR-APP.herokuapp.com/callback"
+      "value": "http://YOUR-HEROKU-APP-NAME-ABOVE.herokuapp.com/callback"
     },
     "AUTH0_SCOPE": {
       "description": "Your Connected App's Consumer Secret.",
